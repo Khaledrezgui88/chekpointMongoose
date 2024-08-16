@@ -1,6 +1,6 @@
 let mongoose = require ("mongoose");
 
-let personSchema =  new mongoose.Schema({
+let userSchema =  new mongoose.Schema({
     name:{
         type:String,
         required : true // champ obligatoire
@@ -18,4 +18,4 @@ let personSchema =  new mongoose.Schema({
 )
 
 
-module.exports = mongoose.model ("Person", personSchema)
+module.exports = mongoose.model ("User", userSchema)
